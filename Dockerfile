@@ -12,4 +12,5 @@ COPY example.tex /root/example.tex
 
 RUN ${CONDA_PREFIX}/bin/conda install -c conda-forge tectonic texlive-core \
     && ${CONDA_PREFIX}/bin/tectonic /root/example.tex \
-    && curl -o /root/git-latexdiff https://gitlab.com/git-latexdiff/git-latexdiff/-/raw/1.6.0/git-latexdiff
+    && curl -o /usr/local/bin/git-latexdiff https://gitlab.com/git-latexdiff/git-latexdiff/-/raw/1.6.0/git-latexdiff \
+    && chmod +x /usr/local/bin/git-latexdiff
