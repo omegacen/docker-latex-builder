@@ -10,7 +10,7 @@
 \usepackage{upgreek}
 \usepackage{rotating}
 \usepackage[
-   pagebackref=true,
+   pagebackref=false,
    pdfpagelabels=true,
    plainpages=false,
    colorlinks=true]{hyperref}
@@ -30,6 +30,18 @@
 \usepackage{epsfig}
 \usepackage{fontspec}
 
+\usepackage{acronym}
+\usepackage{suffix}
+\usepackage{xstring}
+\usepackage{csquotes}
+\usepackage{etoolbox}
+\usepackage{biblatex}
+\usepackage{pdftexcmds}
+\usepackage{ifluatex}
+\usepackage{kvsetkeys}
+\usepackage{etexcmds}
+\usepackage{logreq}
+
 \setlongtables
 
 \begin{document}
@@ -48,7 +60,7 @@
 Example document that imports many packages for tectonic to cache.
 
 \section{Section}{}\label{sec:mysec}
-Section \ref{sec:mysec} contains $x < 3$.
+Section~\ref{sec:mysec} contains $x < 3$.
 
 $r_\textrm{H}=10 to 80$
 
