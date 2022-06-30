@@ -1,6 +1,8 @@
 # docker-latex-builder
 Minimal Docker image for building LaTeX documentation.
 
+Superseded by https://gitlab.astro-wise.org/omegacen/ci-templates/-/tree/master/dockerfiles/latex-builder.
+
 ```
 docker build -t omegacen/latex-builder .
 ```
